@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: CRDI.xcworkspace
+script: xcodebuild -workspace CRDI.xcworkspace -scheme CRDI -sdk iphonesimulator -configuration DEBUG build -verbose
