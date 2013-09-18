@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRDIInjector.h"
+#import "CRDIInstanceInjector.h"
 
 @interface NSObject (AutoInject)
 
-+ (void)setInjector:(CRDIInjector *)injector;
-+ (CRDIInjector*)injector;
++ (void)setInjector:(id <CRDIInstanceInjector>)injector;
++ (id <CRDIInstanceInjector>)injector;
 
 - (id)initWithInject;
 

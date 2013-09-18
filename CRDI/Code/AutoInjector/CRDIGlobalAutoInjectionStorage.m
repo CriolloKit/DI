@@ -37,7 +37,7 @@
     return self;
 }
 
-- (NSString*)put:(CRDIInjector*)injector
+- (NSString*)put:(id <CRDIInstanceInjector>)injector
 {
     NSString *key = [NSString stringWithFormat:@"%d", (NSInteger)injector];
     
@@ -46,7 +46,7 @@
     return key;
 }
 
-- (CRDIInjector *)get:(NSString*)key
+- (id <CRDIInstanceInjector>)get:(NSString*)key
 {
     return [self.storageTable objectForKey:key];
 }

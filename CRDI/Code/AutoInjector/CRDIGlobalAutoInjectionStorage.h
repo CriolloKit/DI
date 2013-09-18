@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRDIInjector.h"
+
+#import "CRDIInstanceInjector.h"
 
 @interface CRDIGlobalAutoInjectionStorage : NSObject
 
 + (CRDIGlobalAutoInjectionStorage *)storage;
-- (NSString*)put:(CRDIInjector*)injector;
-- (CRDIInjector *)get:(NSString*)key;
+- (NSString*)put:(id <CRDIInstanceInjector>)injector;
+- (id <CRDIInstanceInjector>)get:(NSString*)key;
 
 @end

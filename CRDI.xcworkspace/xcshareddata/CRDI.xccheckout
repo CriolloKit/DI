@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BFDDABAF-BA2F-4A8F-8084-0BEA298A7EB4</string>
+	<string>15A013A6-3AE0-4FC7-BC54-2E53FB800CEB</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CRDI</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B23B6F48-504B-44B5-B5D7-D96D81F25E37</key>
-		<string>ssh://github.com/CriolloKit/DI.git</string>
+		<key>00FE8C2D-9CB3-4E67-A547-FFFCEA94B8FB</key>
+		<string>https://github.com/CriolloKit/DI</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CRDI.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B23B6F48-504B-44B5-B5D7-D96D81F25E37</key>
+		<key>00FE8C2D-9CB3-4E67-A547-FFFCEA94B8FB</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/CriolloKit/DI.git</string>
+	<string>https://github.com/CriolloKit/DI</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B23B6F48-504B-44B5-B5D7-D96D81F25E37</string>
+	<string>00FE8C2D-9CB3-4E67-A547-FFFCEA94B8FB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B23B6F48-504B-44B5-B5D7-D96D81F25E37</string>
+			<string>00FE8C2D-9CB3-4E67-A547-FFFCEA94B8FB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DI</string>
 		</dict>

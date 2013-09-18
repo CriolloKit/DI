@@ -11,13 +11,13 @@
 
 @interface CRDIAutoInjector ()
 
-@property (nonatomic, strong) CRDIInjector *injector;
+@property (nonatomic, strong) id <CRDIInstanceInjector> injector;
 
 @end
 
 @implementation CRDIAutoInjector
 
-- (id)initWithInjector:(CRDIInjector*)anInjector;
+- (id)initWithInjector:(id <CRDIInstanceInjector>)anInjector
 {
     NSParameterAssert(anInjector);
     self = [super init];

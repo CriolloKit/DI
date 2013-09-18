@@ -25,7 +25,7 @@ static const char *kAutoInjectSwizzleFlagKey = "kAutoInjectSwizzleFlagKey";
     return obj;
 }
 
-+ (void)setInjector:(CRDIInjector *)injector
++ (void)setInjector:(id <CRDIInstanceInjector>)injector
 {
     
     if (![self isInitMethodSwizzled]) {
@@ -40,11 +40,11 @@ static const char *kAutoInjectSwizzleFlagKey = "kAutoInjectSwizzleFlagKey";
     objc_setAssociatedObject(self, &kAutoInjectStorageKey, key, OBJC_ASSOCIATION_COPY);
 }
 
-+ (CRDIInjector*)injector
++ (id <CRDIInstanceInjector>)injector
 {
     NSString *key = objc_getAssociatedObject(self, &kAutoInjectStorageKey);
     
-    CRDIInjector *injector = nil;
+    id <CRDIInstanceInjector> injector = nil;
     
     if (key) {
         injector = [[CRDIGlobalAutoInjectionStorage storage] get:key];
