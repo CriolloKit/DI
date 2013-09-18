@@ -2,6 +2,8 @@ DI
 [![Build Status](https://travis-ci.org/CriolloKit/DI.png?branch=master)](https://travis-ci.org/CriolloKit/DI)
 ==
 
+[![Build Status](https://travis-ci.org/TheSooth/DI.png?branch=master)](https://travis-ci.org/TheSooth/DI)
+
 Inspired by 
 
 * AppleGuice

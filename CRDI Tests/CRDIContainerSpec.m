@@ -8,6 +8,11 @@
 
 #import <Kiwi.h>
 #import "CRDIContainer.h"
+
+#import "CRDIClassBuilder.h"
+#import "CRDIBlockBuilder.h"
+#import "CRDISingletoneBuilder.h"
+
 #import "CRDISampleClass.h"
 #import "CRDISampleProtocol.h"
 
@@ -50,6 +55,48 @@ describe(@"CRDIContainerSpecs", ^{
             
             [[builder shouldNot] beNil];
             
+            [[builder should] beKindOfClass:[CRDIClassBuilder class]];
+            
+            [[theValue([builder conformsToProtocol:@protocol(CRDIDependencyBuilder)]) should] beTrue];
+        });
+        
+        it(@"Should return block builder", ^{
+            [container bindBlock:^id{
+                return @"";
+            } toProtocol:sampleProtocol];
+            
+            NSObject *builder = [container builderForProtocol:sampleProtocol];
+            
+            [[builder shouldNot] beNil];
+            
+            [[builder should] beKindOfClass:[CRDIBlockBuilder class]];
+            
+            [[theValue([builder conformsToProtocol:@protocol(CRDIDependencyBuilder)]) should] beTrue];
+        });
+        
+        it(@"Should return eager singletone builder whis is binded to class builder", ^{
+            [container bindEagerSingletoneClass:[CRDISampleClass class] toProtocol:sampleProtocol];
+            
+            NSObject *builder = [container builderForProtocol:sampleProtocol];
+            
+            [[builder shouldNot] beNil];
+            
+            [[builder should] beKindOfClass:[CRDISingletoneBuilder class]];
+            
+            [[theValue([builder conformsToProtocol:@protocol(CRDIDependencyBuilder)]) should] beTrue];
+        });
+
+        it(@"Should return eager singletone builder whis is binded to block builder", ^{
+            [container bindEagerSingletoneBlock:^id{
+                return @"";
+            } toProtocol:sampleProtocol];
+            
+            NSObject *builder = [container builderForProtocol:sampleProtocol];
+            
+            [[builder shouldNot] beNil];
+            
+            [[builder should] beKindOfClass:[CRDISingletoneBuilder class]];
+            
             [[theValue([builder conformsToProtocol:@protocol(CRDIDependencyBuilder)]) should] beTrue];
         });
         
@@ -60,6 +107,7 @@ describe(@"CRDIContainerSpecs", ^{
                 [container bindClass:[CRDISampleClass class] toProtocol:sampleProtocol];
             }) should] raise];
         });
+        
     });
 
 });

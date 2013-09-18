@@ -22,7 +22,6 @@
 		EA5B9E3517E735B2002A0D81 /* CRDIInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9E2E17E735B2002A0D81 /* CRDIInjector.m */; };
 		EA5B9E3C17E735C1002A0D81 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5B9E3B17E735C1002A0D81 /* SenTestingKit.framework */; };
 		EA5B9E3D17E735C1002A0D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16E22E17E7358100F90D98 /* Foundation.framework */; };
-		EA5B9E3F17E735C1002A0D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5B9E3E17E735C1002A0D81 /* UIKit.framework */; };
 		EA5B9E4517E735C1002A0D81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA5B9E4317E735C1002A0D81 /* InfoPlist.strings */; };
 		EA5B9E4717E735C1002A0D81 /* CRDIContainerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9E4617E735C1002A0D81 /* CRDIContainerSpec.m */; };
 		EA5B9E4E17E73699002A0D81 /* CRDIContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9E2B17E735B2002A0D81 /* CRDIContainer.m */; };
@@ -62,8 +61,6 @@
 		68ACD69B17E75956003BA236 /* CRDISingletoneBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDISingletoneBuilder.h; sourceTree = "<group>"; };
 		68ACD69C17E75956003BA236 /* CRDISingletoneBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDISingletoneBuilder.m; sourceTree = "<group>"; };
 		A9327771A74846319CA6BF9E /* Pods-CRDISpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDISpecs.xcconfig"; path = "Pods/Pods-CRDISpecs.xcconfig"; sourceTree = "<group>"; };
-		B07DD02A0D724EED8C98A099 /* Pods-CRDI Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDI Tests.xcconfig"; path = "Pods/Pods-CRDI Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
-		D616960771FC4F27924882E0 /* libPods-CRDI Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRDI Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA06443217E85F9C00CF1132 /* CRDIException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIException.h; sourceTree = "<group>"; };
 		EA06443317E85F9C00CF1132 /* CRDIException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDIException.m; sourceTree = "<group>"; };
 		EA16E22B17E7358100F90D98 /* libCRDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCRDI.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +81,6 @@
 		EA5B9E3017E735B2002A0D81 /* CRDIDependencyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIDependencyBuilder.h; sourceTree = "<group>"; };
 		EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDISpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5B9E3B17E735C1002A0D81 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		EA5B9E3E17E735C1002A0D81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA5B9E4217E735C1002A0D81 /* CRDI Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRDI Tests-Info.plist"; sourceTree = "<group>"; };
 		EA5B9E4417E735C1002A0D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA5B9E4617E735C1002A0D81 /* CRDIContainerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRDIContainerSpec.m; sourceTree = "<group>"; };
@@ -110,9 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5B9E3C17E735C1002A0D81 /* SenTestingKit.framework in Frameworks */,
-				EA5B9E3F17E735C1002A0D81 /* UIKit.framework in Frameworks */,
 				EA5B9E3D17E735C1002A0D81 /* Foundation.framework in Frameworks */,
+				EA5B9E3C17E735C1002A0D81 /* SenTestingKit.framework in Frameworks */,
 				4A8DAB7A2B134E5585DBAADE /* libPods-CRDISpecs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +140,6 @@
 				EA5B9E4017E735C1002A0D81 /* CRDI Tests */,
 				EA16E22D17E7358100F90D98 /* Frameworks */,
 				EA16E22C17E7358100F90D98 /* Products */,
-				B07DD02A0D724EED8C98A099 /* Pods-CRDI Tests.xcconfig */,
 				A9327771A74846319CA6BF9E /* Pods-CRDISpecs.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -164,8 +158,6 @@
 			children = (
 				EA16E22E17E7358100F90D98 /* Foundation.framework */,
 				EA5B9E3B17E735C1002A0D81 /* SenTestingKit.framework */,
-				EA5B9E3E17E735C1002A0D81 /* UIKit.framework */,
-				D616960771FC4F27924882E0 /* libPods-CRDI Tests.a */,
 				237FFA4A0C19449FB18A9784 /* libPods-CRDISpecs.a */,
 			);
 			name = Frameworks;
@@ -505,7 +497,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s i386";
 			};
 			name = Debug;
@@ -529,7 +521,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 armv7s i386";
 			};
@@ -545,7 +537,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -560,7 +552,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -593,7 +585,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -624,7 +616,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -640,7 +632,7 @@
 				EA16E23817E7358100F90D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EA16E23917E7358100F90D98 /* Build configuration list for PBXNativeTarget "CRDI" */ = {
 			isa = XCConfigurationList;
@@ -649,7 +641,7 @@
 				EA16E23B17E7358100F90D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EA5B9E4B17E735C1002A0D81 /* Build configuration list for PBXNativeTarget "CRDISpecs" */ = {
 			isa = XCConfigurationList;
@@ -658,7 +650,7 @@
 				EA5B9E4D17E735C1002A0D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

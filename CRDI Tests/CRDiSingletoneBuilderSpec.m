@@ -1,3 +1,11 @@
+//
+//  CRDiSingletoneBuilderSpec.m
+//  CRDI
+//
+//  Created by TheSooth on 9/16/13.
+//  Copyright (c) 2013 CriolloKit. All rights reserved.
+//
+
 #import <Kiwi.h>
 #import "CRDISingletoneBuilder.h"
 #import "CRDISampleClass.h"
@@ -31,6 +39,13 @@ describe(@"CRDiSingletoneBuilderSpec", ^{
         [[theBlock(^{
             [[CRDISingletoneBuilder alloc] initWithBuilder:@""];
         }) should] raise];
+    });
+    
+    it(@"Should return same object builded from singletone builder", ^{
+        CRDISampleClass *sampleObject = [singletoneBuilder build];
+        CRDISampleClass *sameSampleObject = [singletoneBuilder build];
+        
+        [[sampleObject should] equal:sameSampleObject];
     });
     
 });

@@ -26,7 +26,8 @@
     NSParameterAssert(aBuilder);
     
     if (![aBuilder conformsToProtocol:@protocol(CRDIDependencyBuilder)]) {
-        @throw [CRDIException exceptionWithReason:@"aBuilder not implemet CRDIDependencyBuilder protocol"];
+        @throw [CRDIException exceptionWithReason:[NSString stringWithFormat:@"%@ not implemet CRDIDependencyBuilder protocol",
+                                                   NSStringFromClass([aBuilder class])]];
     }
     
     self = [super init];
