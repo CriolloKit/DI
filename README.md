@@ -51,3 +51,7 @@ Service *s = [module instanceForProtocol:@protocol(Service)];
 `
 [module bindClass:[UserClass class] toProtocol:@protocol(UserService) mode:DIInstantiationModeSingltone];
 `
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/CriolloKit/di/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
