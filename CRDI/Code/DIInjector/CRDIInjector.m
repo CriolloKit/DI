@@ -11,12 +11,14 @@
 #import "CRDIClassInspector.h"
 
 static CRDIInjector *sDefaultInjector = nil;
+static void *kCRDIInjectorSpecificKey = "kCRDIInjectorSpecificKey";
 
 @interface CRDIInjector ()
 
 @property (nonatomic, weak) CRDIContainer *container;
 @property (nonatomic, strong) NSMutableDictionary *classesCache;
 @property (nonatomic, strong) CRDIClassInspector *classInspector;
+@property (nonatomic, strong) dispatch_queue_t queue;
 
 @end
 
@@ -47,6 +49,8 @@ static CRDIInjector *sDefaultInjector = nil;
         self.container = aContainer;
         self.classInspector = [CRDIClassInspector new];
         self.classesCache = [NSMutableDictionary new];
+        self.queue = dispatch_queue_create("CRDIInjectorIsolation", DISPATCH_QUEUE_SERIAL);
+        dispatch_queue_set_specific(self.queue, kCRDIInjectorSpecificKey, (void *)kCRDIInjectorSpecificKey, NULL);
     }
     
     return self;
@@ -67,8 +71,12 @@ static CRDIInjector *sDefaultInjector = nil;
         
         id <CRDIDependencyBuilder> builder = [self.container builderForProtocol:propertyModel.protocol];
         
+        if (!builder) {
+            continue;
+        }
+        
         id buildedObject = [builder build];
-
+        
         if ([aInstance respondsToSelector:NSSelectorFromString(propertyModel.name)]) {
             [aInstance setValue:buildedObject forKey:propertyModel.name];
         }
@@ -84,13 +92,22 @@ static CRDIInjector *sDefaultInjector = nil;
 {
     NSString *className = NSStringFromClass([aInstance class]);
     
-    DIClassTemplate *cachedClassTeamplate = self.classesCache[className];
+    __block DIClassTemplate *cachedClassTemplate = self.classesCache[className];
     
-    if (cachedClassTeamplate == nil) {
-        cachedClassTeamplate = [self.classInspector inspect:[aInstance class]];
-        self.classesCache[className] = cachedClassTeamplate;
+    void (^assignClassTemplateBlock)(void) = ^{
+        cachedClassTemplate = [self.classInspector inspect:[aInstance class]];
+        self.classesCache[className] = cachedClassTemplate;
+    };
+    
+    if (cachedClassTemplate == nil) {
+        if (dispatch_get_specific(kCRDIInjectorSpecificKey)) {
+            assignClassTemplateBlock();
+        } else {
+            dispatch_sync(self.queue, assignClassTemplateBlock);
+        }
     }
-    return cachedClassTeamplate;
+    return cachedClassTemplate;
 }
 
 @end
+
