@@ -49,7 +49,7 @@ static void *kCRDIInjectorSpecificKey = "kCRDIInjectorSpecificKey";
         self.container = aContainer;
         self.classInspector = [CRDIClassInspector new];
         self.classesCache = [NSMutableDictionary new];
-        self.queue = dispatch_queue_create("CRDIInjectorIsolation", 0);
+        self.queue = dispatch_queue_create("CRDIInjectorIsolation", DISPATCH_QUEUE_SERIAL);
         dispatch_queue_set_specific(self.queue, kCRDIInjectorSpecificKey, (void *)kCRDIInjectorSpecificKey, NULL);
     }
     
@@ -92,21 +92,21 @@ static void *kCRDIInjectorSpecificKey = "kCRDIInjectorSpecificKey";
 {
     NSString *className = NSStringFromClass([aInstance class]);
     
-    __block DIClassTemplate *cachedClassTeamplate = self.classesCache[className];
+    __block DIClassTemplate *cachedClassTemplate = self.classesCache[className];
     
     void (^assignClassTemplateBlock)(void) = ^{
-        cachedClassTeamplate = [self.classInspector inspect:[aInstance class]];
-        self.classesCache[className] = cachedClassTeamplate;
+        cachedClassTemplate = [self.classInspector inspect:[aInstance class]];
+        self.classesCache[className] = cachedClassTemplate;
     };
     
-    if (cachedClassTeamplate == nil) {
+    if (cachedClassTemplate == nil) {
         if (dispatch_get_specific(kCRDIInjectorSpecificKey)) {
             assignClassTemplateBlock();
         } else {
             dispatch_sync(self.queue, assignClassTemplateBlock);
         }
     }
-    return cachedClassTeamplate;
+    return cachedClassTemplate;
 }
 
 @end
