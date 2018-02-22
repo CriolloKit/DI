@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A8DAB7A2B134E5585DBAADE /* libPods-CRDISpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 237FFA4A0C19449FB18A9784 /* libPods-CRDISpecs.a */; };
+		35D6C2A84BBF9D7B50DDAF5C /* libPods-CRDI-CRDISpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F83096A83EEE5F6A1A31A231 /* libPods-CRDI-CRDISpecs.a */; };
 		68ACD69917E75411003BA236 /* CRDiSingletoneBuilderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD69817E75411003BA236 /* CRDiSingletoneBuilderSpec.m */; };
 		68ACD69D17E75956003BA236 /* CRDISingletoneBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD69C17E75956003BA236 /* CRDISingletoneBuilder.m */; };
 		68ACD69E17E75956003BA236 /* CRDISingletoneBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD69C17E75956003BA236 /* CRDISingletoneBuilder.m */; };
+		697CFAB257A5402569F6B144 /* libPods-CRDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD3D3D9B9D27FC0B0A3A6E1 /* libPods-CRDI.a */; };
 		AD1857C317E9C9FE00B0A886 /* CRDIPropertyNameMatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1857C117E9C8D700B0A886 /* CRDIPropertyNameMatcherSpec.m */; };
 		AD24C80C17E9D8BA00E0ED9E /* CRDIAutoInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = AD24C80B17E9D8BA00E0ED9E /* CRDIAutoInjector.m */; };
 		AD24C80D17E9D8BA00E0ED9E /* CRDIAutoInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = AD24C80B17E9D8BA00E0ED9E /* CRDIAutoInjector.m */; };
@@ -29,7 +30,6 @@
 		AD7A72DD17E9C59200602401 /* DIPropertyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7A72D317E9C1E000602401 /* DIPropertyModel.m */; };
 		AD7A72E217E9C7EA00602401 /* CRDIDefaultPropertyNameMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7A72E117E9C7EA00602401 /* CRDIDefaultPropertyNameMatcher.m */; };
 		AD7A72E317E9C7EA00602401 /* CRDIDefaultPropertyNameMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7A72E117E9C7EA00602401 /* CRDIDefaultPropertyNameMatcher.m */; };
-		E25764918F7C42B1801BDC47 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 942E706A687C456799F5BBF6 /* libPods.a */; };
 		EA06443417E85F9C00CF1132 /* CRDIException.m in Sources */ = {isa = PBXBuildFile; fileRef = EA06443317E85F9C00CF1132 /* CRDIException.m */; };
 		EA06443517E8610900CF1132 /* CRDIException.m in Sources */ = {isa = PBXBuildFile; fileRef = EA06443317E85F9C00CF1132 /* CRDIException.m */; };
 		EA0D366217ED9CC30022E216 /* CRDISampeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0D366017ED9CC10022E216 /* CRDISampeConfiguration.m */; };
@@ -43,7 +43,6 @@
 		EA5B9E3317E735B2002A0D81 /* CRDIConfigratuion.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9E2717E735B2002A0D81 /* CRDIConfigratuion.m */; };
 		EA5B9E3417E735B2002A0D81 /* CRDIContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9E2B17E735B2002A0D81 /* CRDIContainer.m */; };
 		EA5B9E3517E735B2002A0D81 /* CRDIInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9E2E17E735B2002A0D81 /* CRDIInjector.m */; };
-		EA5B9E3C17E735C1002A0D81 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5B9E3B17E735C1002A0D81 /* SenTestingKit.framework */; };
 		EA5B9E3D17E735C1002A0D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16E22E17E7358100F90D98 /* Foundation.framework */; };
 		EA5B9E4517E735C1002A0D81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA5B9E4317E735C1002A0D81 /* InfoPlist.strings */; };
 		EA5B9E4717E735C1002A0D81 /* CRDIContainerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9E4617E735C1002A0D81 /* CRDIContainerSpec.m */; };
@@ -78,13 +77,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		237FFA4A0C19449FB18A9784 /* libPods-CRDISpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRDISpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD3D3D9B9D27FC0B0A3A6E1 /* libPods-CRDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRDI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F23EAE9FA7EC6FF7F89C851 /* Pods-CRDI-CRDISpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDI-CRDISpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRDI-CRDISpecs/Pods-CRDI-CRDISpecs.release.xcconfig"; sourceTree = "<group>"; };
 		68ACD69817E75411003BA236 /* CRDiSingletoneBuilderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDiSingletoneBuilderSpec.m; sourceTree = "<group>"; };
 		68ACD69B17E75956003BA236 /* CRDISingletoneBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDISingletoneBuilder.h; sourceTree = "<group>"; };
 		68ACD69C17E75956003BA236 /* CRDISingletoneBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDISingletoneBuilder.m; sourceTree = "<group>"; };
+		6EF3094348254D4541073C5C /* Pods-CRDI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDI.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRDI/Pods-CRDI.release.xcconfig"; sourceTree = "<group>"; };
 		7EAB936A1C6B8A27009907EA /* CRDIErrorHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIErrorHandlerProtocol.h; sourceTree = "<group>"; };
-		942E706A687C456799F5BBF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9327771A74846319CA6BF9E /* Pods-CRDISpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDISpecs.xcconfig"; path = "Pods/Pods-CRDISpecs.xcconfig"; sourceTree = "<group>"; };
+		87A1BE8425693B9DD586C221 /* Pods-CRDI-CRDISpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDI-CRDISpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRDI-CRDISpecs/Pods-CRDI-CRDISpecs.debug.xcconfig"; sourceTree = "<group>"; };
+		A77FE5334F779D7027EA9D02 /* Pods-CRDI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRDI/Pods-CRDI.debug.xcconfig"; sourceTree = "<group>"; };
 		AD1857C117E9C8D700B0A886 /* CRDIPropertyNameMatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDIPropertyNameMatcherSpec.m; sourceTree = "<group>"; };
 		AD24C80A17E9D8BA00E0ED9E /* CRDIAutoInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIAutoInjector.h; sourceTree = "<group>"; };
 		AD24C80B17E9D8BA00E0ED9E /* CRDIAutoInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDIAutoInjector.m; sourceTree = "<group>"; };
@@ -127,7 +128,7 @@
 		EA5B9E2D17E735B2002A0D81 /* CRDIInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIInjector.h; sourceTree = "<group>"; };
 		EA5B9E2E17E735B2002A0D81 /* CRDIInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDIInjector.m; sourceTree = "<group>"; };
 		EA5B9E3017E735B2002A0D81 /* CRDIDependencyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIDependencyBuilder.h; sourceTree = "<group>"; };
-		EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDISpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5B9E3A17E735C1002A0D81 /* CRDISpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDISpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5B9E3B17E735C1002A0D81 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA5B9E4217E735C1002A0D81 /* CRDI Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRDI Tests-Info.plist"; sourceTree = "<group>"; };
 		EA5B9E4417E735C1002A0D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -139,7 +140,7 @@
 		EA5B9E5417E739AA002A0D81 /* CRDISampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDISampleClass.m; sourceTree = "<group>"; };
 		EA5B9E5517E739AA002A0D81 /* CRDISampleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDISampleProtocol.h; sourceTree = "<group>"; };
 		EA5B9E5C17E73C94002A0D81 /* CRDIBuilderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDIBuilderSpec.m; sourceTree = "<group>"; };
-		F9BD4F43A3CD4BC6BC0014EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F83096A83EEE5F6A1A31A231 /* libPods-CRDI-CRDISpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRDI-CRDISpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA16E22F17E7358100F90D98 /* Foundation.framework in Frameworks */,
-				E25764918F7C42B1801BDC47 /* libPods.a in Frameworks */,
+				697CFAB257A5402569F6B144 /* libPods-CRDI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5B9E3D17E735C1002A0D81 /* Foundation.framework in Frameworks */,
-				EA5B9E3C17E735C1002A0D81 /* SenTestingKit.framework in Frameworks */,
-				4A8DAB7A2B134E5585DBAADE /* libPods-CRDISpecs.a in Frameworks */,
+				35D6C2A84BBF9D7B50DDAF5C /* libPods-CRDI-CRDISpecs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +172,17 @@
 				68ACD69C17E75956003BA236 /* CRDISingletoneBuilder.m */,
 			);
 			path = DISingletoneBuilder;
+			sourceTree = "<group>";
+		};
+		73751C181BB09531E6744B85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A77FE5334F779D7027EA9D02 /* Pods-CRDI.debug.xcconfig */,
+				6EF3094348254D4541073C5C /* Pods-CRDI.release.xcconfig */,
+				87A1BE8425693B9DD586C221 /* Pods-CRDI-CRDISpecs.debug.xcconfig */,
+				4F23EAE9FA7EC6FF7F89C851 /* Pods-CRDI-CRDISpecs.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AD24C80917E9D8AA00E0ED9E /* AutoInjector */ = {
@@ -243,8 +254,7 @@
 				EA5B9E4017E735C1002A0D81 /* CRDI Tests */,
 				EA16E22D17E7358100F90D98 /* Frameworks */,
 				EA16E22C17E7358100F90D98 /* Products */,
-				A9327771A74846319CA6BF9E /* Pods-CRDISpecs.xcconfig */,
-				F9BD4F43A3CD4BC6BC0014EA /* Pods.xcconfig */,
+				73751C181BB09531E6744B85 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				EA16E22B17E7358100F90D98 /* libCRDI.a */,
-				EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */,
+				EA5B9E3A17E735C1002A0D81 /* CRDISpecs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,8 +272,8 @@
 			children = (
 				EA16E22E17E7358100F90D98 /* Foundation.framework */,
 				EA5B9E3B17E735C1002A0D81 /* SenTestingKit.framework */,
-				237FFA4A0C19449FB18A9784 /* libPods-CRDISpecs.a */,
-				942E706A687C456799F5BBF6 /* libPods.a */,
+				2DD3D3D9B9D27FC0B0A3A6E1 /* libPods-CRDI.a */,
+				F83096A83EEE5F6A1A31A231 /* libPods-CRDI-CRDISpecs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -424,11 +434,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA16E23917E7358100F90D98 /* Build configuration list for PBXNativeTarget "CRDI" */;
 			buildPhases = (
-				551611F93C4F48409368A111 /* Check Pods Manifest.lock */,
+				EC20737295089014405F73AF /* [CP] Check Pods Manifest.lock */,
 				EA16E22717E7358100F90D98 /* Sources */,
 				EA16E22817E7358100F90D98 /* Frameworks */,
 				EA16E22917E7358100F90D98 /* CopyFiles */,
-				5B1FE226F4B44ECBBECC81EF /* Copy Pods Resources */,
+				65F68FBF3C8B46019D9254DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -443,11 +453,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA5B9E4B17E735C1002A0D81 /* Build configuration list for PBXNativeTarget "CRDISpecs" */;
 			buildPhases = (
-				B8950B589AC54474862195E6 /* Check Pods Manifest.lock */,
+				AAC2B1837D48979C69D53CE1 /* [CP] Check Pods Manifest.lock */,
 				EA5B9E3617E735C1002A0D81 /* Sources */,
 				EA5B9E3717E735C1002A0D81 /* Frameworks */,
 				EA5B9E3817E735C1002A0D81 /* Resources */,
-				4C64EA8D13A9431295DFE483 /* Copy Pods Resources */,
+				62574459722858B00439770C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,7 +466,7 @@
 			);
 			name = CRDISpecs;
 			productName = "CRDI Tests";
-			productReference = EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */;
+			productReference = EA5B9E3A17E735C1002A0D81 /* CRDISpecs.xctest */;
 			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
@@ -504,64 +514,71 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C64EA8D13A9431295DFE483 /* Copy Pods Resources */ = {
+		62574459722858B00439770C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CRDISpecs-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRDI-CRDISpecs/Pods-CRDI-CRDISpecs-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		551611F93C4F48409368A111 /* Check Pods Manifest.lock */ = {
+		65F68FBF3C8B46019D9254DA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRDI/Pods-CRDI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B1FE226F4B44ECBBECC81EF /* Copy Pods Resources */ = {
+		AAC2B1837D48979C69D53CE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CRDI-CRDISpecs-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8950B589AC54474862195E6 /* Check Pods Manifest.lock */ = {
+		EC20737295089014405F73AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CRDI-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -700,7 +717,7 @@
 		};
 		EA16E23A17E7358100F90D98 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BD4F43A3CD4BC6BC0014EA /* Pods.xcconfig */;
+			baseConfigurationReference = A77FE5334F779D7027EA9D02 /* Pods-CRDI.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/CRDI.dst;
@@ -716,7 +733,7 @@
 		};
 		EA16E23B17E7358100F90D98 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BD4F43A3CD4BC6BC0014EA /* Pods.xcconfig */;
+			baseConfigurationReference = 6EF3094348254D4541073C5C /* Pods-CRDI.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/CRDI.dst;
@@ -732,7 +749,7 @@
 		};
 		EA5B9E4C17E735C1002A0D81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9327771A74846319CA6BF9E /* Pods-CRDISpecs.xcconfig */;
+			baseConfigurationReference = 87A1BE8425693B9DD586C221 /* Pods-CRDI-CRDISpecs.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_MODULES = YES;
@@ -755,18 +772,18 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "CRDI Tests/CRDI Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s i386";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		EA5B9E4D17E735C1002A0D81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9327771A74846319CA6BF9E /* Pods-CRDISpecs.xcconfig */;
+			baseConfigurationReference = 4F23EAE9FA7EC6FF7F89C851 /* Pods-CRDI-CRDISpecs.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_MODULES = YES;
@@ -786,12 +803,12 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "CRDI Tests/CRDI Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s i386";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
