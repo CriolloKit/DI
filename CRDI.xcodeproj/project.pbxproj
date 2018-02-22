@@ -82,6 +82,7 @@
 		68ACD69817E75411003BA236 /* CRDiSingletoneBuilderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDiSingletoneBuilderSpec.m; sourceTree = "<group>"; };
 		68ACD69B17E75956003BA236 /* CRDISingletoneBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDISingletoneBuilder.h; sourceTree = "<group>"; };
 		68ACD69C17E75956003BA236 /* CRDISingletoneBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDISingletoneBuilder.m; sourceTree = "<group>"; };
+		7EAB936A1C6B8A27009907EA /* CRDIErrorHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIErrorHandlerProtocol.h; sourceTree = "<group>"; };
 		942E706A687C456799F5BBF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9327771A74846319CA6BF9E /* Pods-CRDISpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRDISpecs.xcconfig"; path = "Pods/Pods-CRDISpecs.xcconfig"; sourceTree = "<group>"; };
 		AD1857C117E9C8D700B0A886 /* CRDIPropertyNameMatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDIPropertyNameMatcherSpec.m; sourceTree = "<group>"; };
@@ -366,6 +367,7 @@
 		EA5B9E2F17E735B2002A0D81 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				7EAB936A1C6B8A27009907EA /* CRDIErrorHandlerProtocol.h */,
 				EA5B9E3017E735B2002A0D81 /* CRDIDependencyBuilder.h */,
 				EA435CA717E98BDC007F3878 /* CRDIInstanceInjector.h */,
 			);
@@ -455,7 +457,7 @@
 			name = CRDISpecs;
 			productName = "CRDI Tests";
 			productReference = EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 

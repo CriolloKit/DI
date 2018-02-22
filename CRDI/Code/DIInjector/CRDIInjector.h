@@ -10,8 +10,11 @@
 
 #import "CRDIContainer.h"
 #import "CRDIInstanceInjector.h"
+#import "CRDIErrorHandlerProtocol.h"
 
 @interface CRDIInjector : NSObject <CRDIInstanceInjector>
+
+@property (nonatomic, strong) id <CRDIErrorHandlerProtocol> errorHandler;
 
 + (CRDIInjector *)defaultInjector;
 

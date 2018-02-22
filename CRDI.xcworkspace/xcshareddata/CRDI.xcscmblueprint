@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C358F3AA6F2A7E5C091B59DAF1230CB098FF4E49",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C358F3AA6F2A7E5C091B59DAF1230CB098FF4E49" : 0,
+    "FB9247BD6027792840D0D41DBB54D7AC2AED5CBC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1426CF17-0116-4A38-8F23-B87AB4591D4D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C358F3AA6F2A7E5C091B59DAF1230CB098FF4E49" : "DI",
+    "FB9247BD6027792840D0D41DBB54D7AC2AED5CBC" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CRDI",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CRDI.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/TheSooth\/DI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C358F3AA6F2A7E5C091B59DAF1230CB098FF4E49"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/techery\/docs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB9247BD6027792840D0D41DBB54D7AC2AED5CBC"
+    }
+  ]
+}

@@ -68,8 +68,15 @@ static CRDIInjector *sDefaultInjector = nil;
         id <CRDIDependencyBuilder> builder = [self.container builderForProtocol:propertyModel.protocol];
         
         id buildedObject = [builder build];
-        
-        [aInstance setValue:buildedObject forKey:propertyModel.name];
+
+        if ([aInstance respondsToSelector:NSSelectorFromString(propertyModel.name)]) {
+            [aInstance setValue:buildedObject forKey:propertyModel.name];
+        }
+        else {
+            NSString *errorReason = [NSString stringWithFormat:@"Injector tries to inject `%@` property to %@ class which not responds to this selector.\n*Parsed class properties: %@.\n*Injected model %@", propertyModel.name, NSStringFromClass([aInstance class]), cachedClassTeamplate.properties, NSStringFromClass([buildedObject class])];
+            NSError *error = [NSError errorWithDomain:@"CRDIError" code:500 userInfo:@{NSLocalizedDescriptionKey : errorReason}];
+            [self.errorHandler handleError:error];
+        }
     }
 }
 

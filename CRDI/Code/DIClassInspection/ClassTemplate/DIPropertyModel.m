@@ -10,4 +10,8 @@
 
 @implementation DIPropertyModel
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Name: %@; Protocol: %@", self.name, self.protocol];
+}
+
 @end
