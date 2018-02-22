@@ -1,2 +1,2 @@
 language: objective-c
-script:  xctool -workspace CRDI.xcworkspace -scheme CRDI build test -sdk iphonesimulator
+script:  xcodebuild -workspace CRDI.xcworkspace -scheme CRDI test -destination 'platform=iOS Simulator,name=iPhone 5'

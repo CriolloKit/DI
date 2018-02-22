@@ -128,7 +128,7 @@
 		EA5B9E2D17E735B2002A0D81 /* CRDIInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIInjector.h; sourceTree = "<group>"; };
 		EA5B9E2E17E735B2002A0D81 /* CRDIInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDIInjector.m; sourceTree = "<group>"; };
 		EA5B9E3017E735B2002A0D81 /* CRDIDependencyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDIDependencyBuilder.h; sourceTree = "<group>"; };
-		EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDISpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5B9E3A17E735C1002A0D81 /* CRDISpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDISpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5B9E3B17E735C1002A0D81 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA5B9E4217E735C1002A0D81 /* CRDI Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRDI Tests-Info.plist"; sourceTree = "<group>"; };
 		EA5B9E4417E735C1002A0D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				EA16E22B17E7358100F90D98 /* libCRDI.a */,
-				EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */,
+				EA5B9E3A17E735C1002A0D81 /* CRDISpecs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,7 +466,7 @@
 			);
 			name = CRDISpecs;
 			productName = "CRDI Tests";
-			productReference = EA5B9E3A17E735C1002A0D81 /* CRDISpecs.octest */;
+			productReference = EA5B9E3A17E735C1002A0D81 /* CRDISpecs.xctest */;
 			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
@@ -777,7 +777,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s i386";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
@@ -808,7 +808,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s i386";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
