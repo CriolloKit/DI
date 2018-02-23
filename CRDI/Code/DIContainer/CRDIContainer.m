@@ -97,7 +97,7 @@ static CRDIContainer *defaultContainer = nil;
     NSParameterAssert(aBuilder);
     NSParameterAssert(aProtocol);
     
-    NSString *protocolKey = [self stringFromPorotocol:aProtocol];
+    NSString *protocolKey = [self stringFromProtocol:aProtocol];
     
     self.configurationDictionary[protocolKey] = aBuilder;
 }
@@ -107,7 +107,7 @@ static CRDIContainer *defaultContainer = nil;
     NSParameterAssert(aBuilder);
     NSParameterAssert(aProtocol);
     
-    NSString *protocolKey = [self stringFromPorotocol:aProtocol];
+    NSString *protocolKey = [self stringFromProtocol:aProtocol];
     
     NSMutableArray *buildersArray = self.configurationDictionary[protocolKey];
     
@@ -124,9 +124,7 @@ static CRDIContainer *defaultContainer = nil;
 {
     NSParameterAssert(aProtocol);
     
-    [self checkIfProtocolNotBinded:aProtocol];
-    
-    NSString *protocolKey = [self stringFromPorotocol:aProtocol];
+    NSString *protocolKey = [self stringFromProtocol:aProtocol];
     
     id builderWrapper = self.configurationDictionary[protocolKey];
     
@@ -144,8 +142,6 @@ static CRDIContainer *defaultContainer = nil;
 - (NSArray *)buidersForProtocol:(Protocol *)aProtocol
 {
     NSParameterAssert(aProtocol);
-    
-    [self checkIfProtocolNotBinded:aProtocol];
     
     NSString *protocolKey = NSStringFromProtocol(aProtocol);
     
@@ -198,26 +194,18 @@ static CRDIContainer *defaultContainer = nil;
 
 - (void)checkIfProtocolAlreadyBinded:(Protocol *)aProtocol
 {
-    if ([self protocolIsBinded:aProtocol]) {
-        @throw [CRDIException exceptionWithReason:[NSString stringWithFormat:@"Builder for protocol %@ already binded", [self stringFromPorotocol:aProtocol]]];
-    }
-}
-
-- (void)checkIfProtocolNotBinded:(Protocol *)aProtocol
-{
-    if (![self protocolIsBinded:aProtocol]) {
-        @throw [CRDIException exceptionWithReason:[NSString stringWithFormat:@"Builder for protocol %@ is not binded", [self stringFromPorotocol:aProtocol]]];
-    }
+    NSString *messageIfAlreadyBinded = [NSString stringWithFormat:@"Builder for protocol %@ already binded", [self stringFromProtocol:aProtocol]];
+    NSAssert(![self protocolIsBinded:aProtocol], messageIfAlreadyBinded);
 }
 
 - (BOOL)protocolIsBinded:(Protocol *)aProtocol
 {
-    NSString *protocolKey = [self stringFromPorotocol:aProtocol];
+    NSString *protocolKey = [self stringFromProtocol:aProtocol];
     
     return self.configurationDictionary[protocolKey] != nil;
 }
 
-- (NSString *)stringFromPorotocol:(Protocol *)aProtocol
+- (NSString *)stringFromProtocol:(Protocol *)aProtocol
 {
     return NSStringFromProtocol(aProtocol);
 }
